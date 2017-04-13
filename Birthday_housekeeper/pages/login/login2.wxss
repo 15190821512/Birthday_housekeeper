@@ -1,0 +1,129 @@
+.overall {
+  margin: auto;
+  width: 96%;
+  height: 999rpx;
+}
+
+.top1 {
+  width: 210rpx;
+  height: 40rpx;
+  margin: 50rpx auto;
+  color: #696969;
+  font-size: 31rpx;
+  font-family: 黑体;
+  font-weight: 600;
+}
+
+.top2 {
+  margin: auto;
+  width: 90%;
+  height: 105rpx;
+}
+
+
+.sty1 {
+  float: left;
+  width: 48rpx;
+  height: 48rpx;
+  font-size: 25rpx;
+  border-radius: 24rpx;
+  margin-left: 70rpx;
+  line-height: 46rpx;
+  text-align: center;
+  background: #f44;
+  color: white;
+}
+
+
+.sty2 {
+  float: left;
+  width: 43rpx;
+  height: 43rpx;
+  font-size: 25rpx;
+  border-radius: 25.1rpx;
+  margin-left: 30rpx;
+  line-height: 43rpx;
+  text-align: center;
+  color: #969696;
+  font-weight: 600;
+  border: 4rpx solid #969696;
+}
+
+.sty3 {
+  float: left;
+  margin-left: 40rpx;
+  font-size: 25rpx;
+  color: #969696;
+}
+
+.sty4 {
+  float: left;
+  width: 150rpx;
+  margin-left: 45rpx;
+  margin-top: 15rpx;
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+}
+
+.tou {
+  width: 110rpx;
+  height: 110rpx;
+  margin: 40rpx auto;
+}
+
+.section {
+  width: 80%;
+  height: 80rpx;
+  margin: 40rpx auto;
+  padding-left: 40rpx;
+  background-color: #dddddf;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+}
+
+.radio-group {
+  width: 60%;
+  margin: 50rpx;
+}
+
+.radio {
+  margin-left: 100rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.next {
+  width: 90%;
+  height: 70rpx;
+  font-size: 25rpx;
+  color: white;
+  font-weight: 600;
+  margin-top: 30rpx;
+  background: #f44;
+  line-height: 70rpx;
+}
+
+.riqi {
+  width: 172rpx;
+  height: 52rpx;
+  position: absolute;
+  top: 560rpx;
+  right: 130rpx;
+  z-index: 100;
+}
+
+.picker {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #969696;
+  width: 170rpx;
+  height: 50rpx;
+  border: 1px solid #969696;
+  text-align: center;
+  line-height: 50rpx;
+  z-index: 100;
+  border-radius: 10rpx;
+}

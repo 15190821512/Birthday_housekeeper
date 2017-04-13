@@ -1,0 +1,67 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <!--搜索框-->
+  <view class="search flex-wrp">
+      <view class="search-left flex-item">
+          <image src="../../images/search.png"></image>
+          <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
+      </view>
+      <view class="search-right flex-item" bindtap="upper">
+          <image src="../../images/lighting.png"></image>
+      </view>
+  </view>
+  <!--图片轮换，生日提醒-->
+    <swiper class="activity" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <!--<image src="{{item}}" class="slide-image" width="355" height="120"/>-->
+        </swiper-item>
+      </block>
+    </swiper>
+    <!--日期控件，本月日期事件-->
+    <view class="calendar " >
+        <!--日期控件-->
+        <view class="calendar pink-color box box-tb">
+            <view class="top-handle fs28 box box-lr box-align-center box-pack-center">
+                <view class="prev box box-rl" bindtap="handleCalendar" data-handle="prev">
+                    <view class="prev-handle box box-lr box-align-center box-pack-center">
+                    《
+                    </view>
+                </view>
+                <view class="date-area box box-lr box-align-center box-pack-center">
+                    {{cur_year || "--"}} 年 {{cur_month || "--"}} 月
+                </view>
+                <view class="next box box-lr" bindtap="handleCalendar" data-handle="next">
+                    <view class="next-handle box box-lr box-align-center box-pack-center">
+                    》
+                    </view>
+                </view>
+            </view>
+            <view class="weeks box box-lr box-pack-center box-align-center">
+                <view class="flex week fs28" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+            </view>
+            <view class="days box box-lr box-wrap">
+                <view wx:if="{{hasEmptyGrid}}" class="grid white-color box box-align-center box-pack-center" 
+                wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+                </view>
+                <view class="grid white-color box box-align-center box-pack-center" 
+                wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}">
+                    <view class="day {{index >= 5 && index <= 13 ? 'border-radius pink-bg' : ''}} box box-align-center box-pack-center">
+                    {{item}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    
+    <!--其他功能-->
+    <view class="calendar section">
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item bc_green" >新建活动+</view>
+            <view class="flex-item bc_red">季度</view>
+            <view class="flex-item bc_blue">年</view>
+            <view class="flex-item bc_yellow">菜单</view>
+        </view>
+    </view>
+</scroll-view>
+

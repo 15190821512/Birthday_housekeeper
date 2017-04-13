@@ -1,0 +1,118 @@
+.overall {
+  margin: auto;
+  width: 96%;
+  height: 999rpx;
+}
+
+.top1 {
+  width: 210rpx;
+  height: 40rpx;
+  margin: 50rpx auto;
+  color: #696969;
+  font-size: 31rpx;
+  font-family: 黑体;
+  font-weight: 600;
+}
+
+.top2 {
+  margin: auto;
+  width: 86%;
+  height: 105rpx;
+}
+
+.sty1 {
+  float: left;
+  width: 48rpx;
+  height: 48rpx;
+  font-size: 25rpx;
+  border-radius: 24rpx;
+  margin-left: 70rpx;
+  line-height: 46rpx;
+  text-align: center;
+  background: #f44;
+  color: white;
+}
+
+.sty2 {
+  float: left;
+  width: 43rpx;
+  height: 43rpx;
+  font-size: 25rpx;
+  border-radius: 25.1rpx;
+  margin-left: 30rpx;
+  line-height: 43rpx;
+  text-align: center;
+  color: #969696;
+  font-weight: 600;
+  border: 4rpx solid #969696;
+}
+
+.sty3 {
+  float: left;
+  margin-left: 40rpx;
+  font-size: 25rpx;
+  color: #969696;
+}
+
+.sty4 {
+  float: left;
+  width: 140rpx;
+  margin-left: 40rpx;
+  margin-top: 15rpx;
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+}
+
+.section {
+  width: 80%;
+  height: 80rpx;
+  margin: 40rpx auto;
+  padding-left: 40rpx;
+  background-color: #dddddf;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+}
+
+.yzm {
+  width: 170rpx;
+  height: 60rpx;
+  font-size: 25rpx;
+  background: white;
+  color: #a9a9a9;
+  top: 292rpx;
+  right: 85rpx;
+  position: absolute;
+  z-index: 100;
+}
+
+.group {
+  margin-left: 35rpx;
+  height: 50rpx;
+}
+
+.ziti1 {
+  font-size: 23rpx;
+  color: #cdcdcd;
+  font-weight: 600;
+  margin-left: 15rpx;
+  text-decoration: underline;
+}
+
+.ziti2 {
+  font-size: 23rpx;
+  color: #f44;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.next {
+  width: 90%;
+  height: 76rpx;
+  font-size: 25rpx;
+  color: #f44;
+  font-weight: 600;
+  margin-top: 76rpx;
+  border: 2rpx solid #f44;
+}

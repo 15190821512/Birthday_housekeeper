@@ -1,0 +1,38 @@
+
+<!--登录界面-->
+<view class="overall">
+  <view class="top1">用户资料完善</view>
+  <view class="top2">
+    <view style="width:600rpx;margin-left:30rpx">
+      <view class='sty1'>1</view>
+      <view class='sty3'>......</view>
+      <view class='sty2'>2</view>
+      <view class='sty3'>......</view>
+      <view class='sty2'>3</view>
+    </view>
+    <view style="width:90%;float:left;">
+      <view class="sty4">完善手机号</view>
+      <view class="sty4">完善生日</view>
+      <view class="sty4">开始使用</view>
+    </view>
+  </view>
+  <view>
+    <input class="section" bindinput='teleInput' placeholder="请输入新的手机号码" auto-focus value="{{tele}}" />
+    <button class="yzm" bindtap="yzm">获取静态码</button>
+  </view>
+  <view>
+    <input class="section" bindinput='yzmInput' placeholder="请输入静态码" value="{{yzm}}" />
+  </view>
+  <view style="width:96%;margin:auto;">
+    <view class="group">
+      <block wx:for="{{iconColor}}">
+        <icon type="success" size="18" color="{{item}}" />
+      </block>
+      <text class="ziti1">同意生日管家</text>
+      <text class="ziti2">用户协议</text>
+    </view>
+  </view>
+  <view style="width:96%;margin:auto;">
+    <button class="next" bindtap="next">下一步</button>
+  </view>
+</view>

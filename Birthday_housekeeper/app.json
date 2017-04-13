@@ -1,0 +1,46 @@
+{
+  "pages":[
+    
+    "pages/login/login",
+    "pages/myself/myself",
+    "pages/login/login2",
+    "pages/mprofile/mprofile",
+    "pages/index/index"
+    
+  ],
+ "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e64340",
+    "navigationBarTitleText": "生日管家",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  }
+  ,
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index_focus.png"
+    }, {
+      "pagePath": "pages/birthday/birthday",
+      "text": "",
+      "iconPath": "images/discovery.png",
+      "selectedIconPath": "images/discovery_focus.png"
+    }, {
+      "pagePath": "pages/myself/myself",
+      "text": "",
+      "iconPath": "images/burger.png",
+      "selectedIconPath": "images/burger_focus.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

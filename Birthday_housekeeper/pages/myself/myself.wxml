@@ -1,0 +1,48 @@
+
+<view class="container more">
+  <view class="user flex-wrp">
+    <view class="avatar flex-item">
+      <image class="userinfo-avatar" src="../../images/tou.png" background-size="cover"></image>
+    </view>
+    <view class="user-info flex-item">
+      <text class="userinfo-nickname">我的姓名：{{userName}}</text>
+      <text class="userinfo-nickname">我的生日：{{birth}}</text>
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/invite.png"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="mprofile" >
+        <text>我的资料</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/book.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>其他功能</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/ring.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>设置</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/live.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>关于</text>
+      </view>
+    </view>
+
+  </view>
+</view>

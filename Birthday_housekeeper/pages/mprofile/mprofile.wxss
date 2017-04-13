@@ -1,0 +1,119 @@
+.overall{
+    margin: auto;
+    width: 100%;
+    height: 999rpx;
+}
+
+.top1{
+    width: 100%;
+    height: 369rpx;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ff3333), to(#ffffff));
+}
+
+.ziliao{
+    width: 450rpx;
+    height: 200rpx;
+    margin:60rpx 30rpx;
+    float: left;
+}
+
+.touxiang{
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 55rpx;
+    float: right;
+    margin: 90rpx 30rpx;
+    border: 2rpx solid white;
+}
+
+.userinfo-avatar{
+  flex: 1;
+  display: inline-block;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 80rpx;
+}
+
+.sty1{
+    font-size: 60rpx;
+    color: white;
+    font-weight: 600;
+    float: left;
+}
+
+.sty2{
+    width: 60rpx;
+    font-size: 24rpx;
+    color: white;
+    float: left;
+    margin-left:20rpx;
+    margin-top:35rpx;
+}
+
+.sty3{
+    width: 440rpx;
+    font-size: 24rpx;
+    color: white;
+    float: left;
+    margin-top: 10rpx;
+}
+
+.top2{
+    width: 100%;
+    height: 300rpx;
+}
+
+.b1{
+    width: 100%;
+    height: 150rpx;
+}
+
+.line{
+    width: 94%;
+    height: 1rpx;
+    border-bottom: 1rpx solid #cdcdcd;
+    margin: auto;
+}
+
+.t1{
+    width:86rpx;
+    height: 86rpx;
+    border-radius: 43rpx;
+    line-height: 86rpx;
+    text-align: center;
+    font-size: 31rpx;
+    color: white;
+    font-weight: 600;
+    float: left;
+    margin: 30rpx 30rpx;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ff5f88), to(#fea158));
+}
+
+.t2{
+    float: left;
+    font-weight: 600;
+    font-size: 30rpx;
+    margin-left:20rpx;
+    margin-top:50rpx;
+    color: #444444;
+}
+
+.t3{
+    margin: 50rpx 50rpx;
+    float: right;
+}
+
+.foot{
+    margin-top:40rpx;
+    width: 100%;
+    height: 400rpx;
+}
+
+.f1{
+    width: 92%;
+    height: 40rpx;
+    font-size: 35rpx;
+    font-weight: 600;
+    color: #888888;
+    margin: auto;
+}

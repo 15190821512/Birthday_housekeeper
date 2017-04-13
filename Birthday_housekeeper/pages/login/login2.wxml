@@ -1,0 +1,45 @@
+
+<!--登录界面2-->
+<view class="overall">
+  <view class="top1">用户资料完善</view>
+  <view class="top2">
+    <view style="width:600rpx;margin-left:30rpx">
+      <view class='sty1'>1</view>
+      <view class='sty3'>......</view>
+      <view class='sty1'>2</view>
+      <view class='sty3'>......</view>
+      <view class='sty2'>3</view>
+    </view>
+    <view style="width:90%;float:left">
+      <view class="sty4">完善手机号</view>
+      <view class="sty4">完善生日</view>
+      <view class="sty4">开始使用</view>
+    </view>
+  </view>
+  <view style="width:96%">
+    <view class="tou">
+      <image src="../../images/tou.png" style="width:110rpx;height:110rpx"></image>
+    </view>
+  </view>
+  <view>
+    <input class="section" bindinput='useNinput' placeholder="请输入姓名" value="{{userName}}" />
+  </view>
+  <view>
+    <input class="section" bindinput='birthInput' disabled placeholder="请选择生日" value="{{birth}}" />
+  </view>
+  <view style="width:96%;margin:auto;">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}">
+        <radio style="" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+  <view style="width:96%;margin:auto;">
+    <button class="next" bindtap="save">保存</button>
+  </view>
+  <view class="riqi">
+    <picker mode="date" value="{{birth}}" start="1900-01-01" end="2017-04-11" bindchange="bindDateChange">
+      <view class="picker">点击选择日期</view>
+    </picker>
+  </view>
+</view>

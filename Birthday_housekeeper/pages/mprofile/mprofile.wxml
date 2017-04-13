@@ -1,0 +1,43 @@
+
+<!--我的资料界面-->
+<view class="overall">
+  <view class="top1">
+    <view class="ziliao">
+      <view class="sty1">{{user}}</view>
+      <view class="sty2">{{sex}}</view>
+      <view class="sty3">{{birth}}|{{xinzuo}}</view>
+      <view class="sty3">现居南通</view>
+      <view class="sty3">手机号:{{tele}}</view>
+    </view>
+    <view class="touxiang">
+      <image class="userinfo-avatar" src="../../images/tou.png" background-size="cover"></image>
+    </view>
+  </view>
+  <view class="top2">
+    <view class="b1">
+      <view class="t1">99+</view>
+      <view class="t2">点赞送祝福</view>
+      <view class="t3">></view>
+    </view>
+    <view class="line"></view>
+    <view class="b1">
+      <view class="t1" style="background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#53cdfb), to(#3ddaad));">{{riqi}}</view>
+      <view class="t2">生活百科 改善生活</view>
+      <view class="t3">></view>
+    </view>
+  </view>
+  <view class="foot">
+    <view class="f1">更多</view>
+   <view class="b1">
+      <view class="t1" style="background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#879ae7), to(#d99ee9));">77</view>
+      <view class="t2">今日运势</view>
+      <view class="t3">></view>
+    </view>
+    <view class="line"></view>
+    <view class="b1">
+      <view class="t1" style="background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ff9e48), to(#ffc935));">5</view>
+      <view class="t2">谁记了我的生日</view>
+      <view class="t3">></view>
+    </view>
+  </view>
+</view>
