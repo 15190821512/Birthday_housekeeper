@@ -24,17 +24,7 @@ Page({
       currentNavtab: e.currentTarget.dataset.idx
     });
   },
-// 页面重定向
-  // bindItemTap: function() {
-  //   wx.navigateTo({
-  //     url: '../answer/answer'
-  //   })
-  // },
-  // bindQueTap: function() {
-  //   wx.navigateTo({
-  //     url: '../question/question'
-  //   })
-  // },
+  // 页面重定向
   upper: function () {
     wx.showNavigationBarLoading()
     this.refresh();
@@ -47,10 +37,7 @@ Page({
     setTimeout(function(){wx.hideNavigationBarLoading();that.nextLoad();}, 1000);
     console.log("lower")
   },
-  //scroll: function (e) {
-  //  console.log("scroll")
-  //},
-
+  
   //网络请求数据, 实现刷新
   refresh0: function(){
     var index_api = '';

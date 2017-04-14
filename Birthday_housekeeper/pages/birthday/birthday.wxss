@@ -4,11 +4,9 @@
 .container .search{
   width: 735rpx;
   height: 65rpx;
-  padding: 12.5rpx 0 12.5rpx 15rpx;
   background:#fff;
-   border-bottom: solid 1px #ebebeb;
-
-  /*background: #2A8CE5;*/
+  padding: 12.5rpx 0 12.5rpx 15rpx;
+  border-bottom: solid 1px #ebebeb;
 }
 .container .search-left{
   flex: 8;
@@ -22,9 +20,7 @@
   font-size: 26rpx;
 }
 .search-placeholder{
-  /*color: #8CCEFD;*/
   color: #e64340;
-  /*color:#666;*/
   line-height: 20rpx;
 }
 
@@ -63,12 +59,10 @@
 .activity{
   width: 750rpx;
   height: 65rpx;
-  /*height: 375rpx;*/
 }
 .bc_green image{
   width: 65rpx;
   height: 65rpx;
-  /*height: 375rpx;*/
 }
 .placehold{
   font-size: 28rpx;
