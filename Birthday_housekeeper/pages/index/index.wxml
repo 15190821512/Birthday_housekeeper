@@ -10,14 +10,16 @@
           <image src="../../images/lighting.png"></image>
       </view>
   </view>
+
   <!--图片轮换，生日提醒-->
     <swiper class="activity" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}">
         <swiper-item>
-          <!--<image src="{{item}}" class="slide-image" width="355" height="120"/>-->
+           <image src="{{item}}" class="slide-image" width="355" height="155"/>
         </swiper-item>
       </block>
     </swiper>
+
     <!--日期控件，本月日期事件-->
     <view class="calendar " >
         <!--日期控件-->
@@ -37,9 +39,11 @@
                     </view>
                 </view>
             </view>
+             <!--周日--周六-->
             <view class="weeks box box-lr box-pack-center box-align-center">
                 <view class="flex week fs28" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
             </view>
+              <!--具体日期号-->
             <view class="days box box-lr box-wrap">
                 <view wx:if="{{hasEmptyGrid}}" class="grid white-color box box-align-center box-pack-center" 
                 wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
@@ -53,7 +57,7 @@
             </view>
         </view>
     </view>
-    
+
     <!--其他功能-->
     <view class="calendar section">
         <view class="flex-wrp" style="flex-direction:row;">
@@ -64,4 +68,6 @@
         </view>
     </view>
 </scroll-view>
+
+
 

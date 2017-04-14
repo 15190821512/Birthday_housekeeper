@@ -7,7 +7,17 @@ Page({
     feed: [],
     feed_length: 0,
      // hasEmptyGrid 变量控制是否渲染空格子，若当月第一天是星期天，就不应该渲染空格子
-    hasEmptyGrid: false
+    hasEmptyGrid: false,
+    currentNavtab: "0",
+    imgUrls: [
+      '../../images/24213.jpg',
+      '../../images/24280.jpg',
+      '../../images/1444983318907-_DSC1826.jpg'
+    ],
+    indicatorDots: false,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000
   },
   //事件处理函数
   bindItemTap: function() {
@@ -173,13 +183,6 @@ Page({
         cur_year: newYear,
         cur_month: newMonth
       })
-    }
-  },
-  onShareAppMessage() {
-    return {
-      title: '小程序日历',
-      desc: '还是新鲜的日历哟',
-      path: 'pages/calendar/calendar'
     }
   }
 

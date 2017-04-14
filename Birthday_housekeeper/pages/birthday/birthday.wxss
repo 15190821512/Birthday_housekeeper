@@ -1,0 +1,119 @@
+/*.container{
+  height: 1500rpx;
+}*/
+.container .search{
+  width: 735rpx;
+  height: 65rpx;
+  padding: 12.5rpx 0 12.5rpx 15rpx;
+  background:#fff;
+   border-bottom: solid 1px #ebebeb;
+
+  /*background: #2A8CE5;*/
+}
+.container .search-left{
+  flex: 8;
+  background: #fff;
+  border: 1px #ebebeb solid;
+  text-align: left;
+}
+.container .search-left input{
+  display: inline-block;
+  height: 65rpx;
+  font-size: 26rpx;
+}
+.search-placeholder{
+  /*color: #8CCEFD;*/
+  color: #e64340;
+  /*color:#666;*/
+  line-height: 20rpx;
+}
+
+.container .search .search-left image{
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx 15rpx 15rpx 20rpx;
+}
+.container .search .search-right{
+  flex: 1;
+}
+.container .search .search-right image{
+  width: 45rpx;
+  height: 45rpx;
+  padding: 10rpx;
+}
+
+/*下面的导航*/
+.top-tab{
+  width: 750rpx;
+  height: 100rpx;
+  background: #fff;
+  color: #6d6d6d;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0 1px 1px #ebebeb;
+  margin: 0 0 8rpx 0;
+  z-index: 9999;
+}
+/*选中某个点的红色*/
+.toptab.active{
+  color: #e64340;
+  border-bottom: solid 2px #e64340;
+}
+.activity{
+  width: 750rpx;
+  height: 65rpx;
+  /*height: 375rpx;*/
+}
+.bc_green image{
+  width: 65rpx;
+  height: 65rpx;
+  /*height: 375rpx;*/
+}
+.placehold{
+  font-size: 28rpx;
+  padding: 80rpx 0;
+}
+
+/*组合框*/
+.chat-item{
+  width: 725rpx;
+  background: #ffffff;
+  padding: 25rpx 25rpx 25rpx 0;
+  border-bottom: solid 1px #ebebeb;
+}
+.chat-item  image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+}
+.chat-item .avatar{
+  flex: 1;
+}
+.chat-item .chat-content{
+  flex: 4;
+  text-align: left;
+}
+
+.chat-item .chat-content .chat-source{
+  color: #818A8F;
+  font-size: 28rpx;
+  padding: 4rpx 0 8rpx 0;
+}
+.chat-item .chat-content .chat-source .chatmate{
+  font-size: 34rpx;
+  color: #000000;
+  text-align: left;
+}
+.chat-item .chat-content .chat-source .lasttime{
+  flex: 1;
+  font-size: 22rpx;
+  float: right;
+  vertical-align: text-bottom;
+}
+.chat-item .chat-content .chat-txt{
+  display: block;
+  color: #7b7b7b;
+  font-size: 26rpx;
+  line-height: 34rpx;
+}

@@ -1,11 +1,13 @@
 {
   "pages":[
     
-    "pages/login/login",
-    "pages/myself/myself",
+    "pages/login/login",    
     "pages/login/login2",
-    "pages/mprofile/mprofile",
-    "pages/index/index"
+     "pages/index/index",
+    "pages/birthday/birthday",
+    "pages/myself/myself",
+    "pages/mprofile/mprofile"
+
     
   ],
  "window":{

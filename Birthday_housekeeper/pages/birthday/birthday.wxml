@@ -1,0 +1,125 @@
+
+<view class="top-tab flex-wrp flex-tab " >
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" 
+  wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+
+<scroll-view scroll-y="true" class="container discovery withtab" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <!--全部的列表-->
+  <view class="ctnt0 placehold" hidden="{{currentNavtab==0 ? '' : true}}">
+  <!--搜索框-->
+    <view padding="0">
+      <view class="search flex-wrp">
+        <view class="search-left flex-item">
+            <image src="../../images/search.png"></image>
+            <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
+        </view>
+        <view class="search-right flex-item" bindtap="upper">
+            <image src="../../images/lighting.png"></image>
+        </view>
+      </view>
+    </view>
+   <!--列表框-->
+    <view class="container chat">
+      <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <view class="chat-item flex-wrp">
+          <view class="avatar flex-item">
+            <image src="{{item.feed_source_img}}"></image>
+          </view>
+          <view class="chat-content flex-item">
+            <view class="chat-source">
+              <text class="chatmate">{{item.feed_source_name}}</text>
+              <text class="lasttime">{{item.feed_source_txt}}</text>
+            </view>
+            <text class="chat-txt">{{item.answer_ctnt}}</text>
+          </view>
+        </view>     
+      </block>
+    </view>
+    <!--添加事件-->
+    <view>
+        <button>添加日程+</button>
+    </view>
+
+  </view>
+  <!--生日列表-->
+  <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
+   
+   <!--列表框-->
+    <view class="container chat">
+      <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <view class="chat-item flex-wrp">
+          <view class="avatar flex-item">
+            <image src="{{item.feed_source_img}}"></image>
+          </view>
+          <view class="chat-content flex-item">
+            <view class="chat-source">
+              <text class="chatmate">{{item.feed_source_name}}</text>
+              <text class="lasttime">{{item.feed_source_txt}}</text>
+            </view>
+            <text class="chat-txt">{{item.answer_ctnt}}</text>
+          </view>
+        </view>     
+      </block>
+    </view>
+    <!--添加事件-->
+    <view>
+        <button>添加日程+</button>
+    </view>
+
+  </view>    
+  <!--纪念日列表-->
+  <view class="ctnt2 placehold" hidden="{{currentNavtab==2 ? '' : true}}">
+
+   <!--列表框-->
+    <view class="container chat">
+      <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <view class="chat-item flex-wrp">
+          <view class="avatar flex-item">
+            <image src="{{item.feed_source_img}}"></image>
+          </view>
+          <view class="chat-content flex-item">
+            <view class="chat-source">
+              <text class="chatmate">{{item.feed_source_name}}</text>
+              <text class="lasttime">{{item.feed_source_txt}}</text>
+            </view>
+            <text class="chat-txt">{{item.answer_ctnt}}</text>
+          </view>
+        </view>     
+      </block>
+    </view>
+    <!--添加事件-->
+    <view>
+        <button>添加日程+</button>
+    </view>
+
+  </view>
+  <!--其他日期提醒-->
+  <view class="ctnt3 placehold" hidden="{{currentNavtab==3 ? '' : true}}">
+  
+   <!--列表框-->
+    <view class="container chat">
+      <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <view class="chat-item flex-wrp">
+          <view class="avatar flex-item">
+            <image src="{{item.feed_source_img}}"></image>
+          </view>
+          <view class="chat-content flex-item">
+            <view class="chat-source">
+              <text class="chatmate">{{item.feed_source_name}}</text>
+              <text class="lasttime">{{item.feed_source_txt}}</text>
+            </view>
+            <text class="chat-txt">{{item.answer_ctnt}}</text>
+          </view>
+        </view>     
+      </block>
+    </view>
+    <!--添加事件-->
+    <view>
+        <button>添加日程+</button>
+    </view>
+
+  </view>
+</scroll-view>
